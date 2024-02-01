@@ -1,0 +1,28 @@
+.header{
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 7rem;
+    text-align: center;
+
+    &_heading{
+        color: #fff;
+        font-size: 2.9vw;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #ffffff, #a3a3a3);
+        // background: linear-gradient(45deg, #ff9900, #ff5e62, #8a8aff);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &_sub{
+        color: #ffffffaf;
+        margin-bottom: 1rem;
+        font-size: 1.1vw;
+    }
+
+    &_btn{
+        
+    }
+}

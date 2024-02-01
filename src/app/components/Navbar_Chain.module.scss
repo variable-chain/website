@@ -1,0 +1,15 @@
+.social_list{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ffffff;
+    padding: 0 15px;
+    border-radius: 50px;
+
+    &_item{
+        margin: 0 10px;
+
+        svg{
+            width: 25px;
+        }
+    }
+}
