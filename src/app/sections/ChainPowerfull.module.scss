@@ -1,0 +1,68 @@
+@import "../../../utils/Variables.scss";
+
+.powerfull{
+
+    &_heading{
+        margin-top: 8rem;
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #ffffff, #a3a3a3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_section{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &_card{
+        padding: 1rem;
+        background-color: #161616;
+        border-radius: 15px;
+        margin: 10px;
+
+        &_1{
+
+            &_content{
+                margin-top: 40px;
+            }
+        }
+
+        &_4{
+            // flex: 27%;
+            // width: 19%;
+            width: 365px;
+
+            @include respond(tab-port){
+                width: auto;
+            }
+
+            &_content{
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &_3_image{
+        width: 100%;
+    }
+
+    &_content{
+        padding-top: 10px;
+    }
+}

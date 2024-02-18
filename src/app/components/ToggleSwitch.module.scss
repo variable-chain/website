@@ -1,0 +1,45 @@
+/* Dark Class */
+// .darkClass {
+//     background-color: #2d3748; /* Replace with your preferred dark background color */
+//     color: #cbd5e0; /* Replace with your preferred text color for dark mode */
+//   }
+  
+//   /* Light Class */
+//   .lightClass {
+//     background-color: #f7fafc; /* Replace with your preferred light background color */
+//     color: #1a202c; /* Replace with your preferred text color for light mode */
+//   }
+  
+
+  .checkBox{
+
+    &_container{
+      // padding: 0 1px;
+      background-color: #1A1A1A;
+      border-radius: 999px;
+      overflow: hidden; 
+      border: .5px solid #343434; 
+      // justify-content: 'flex-start'; 
+      // align-items: 'flex-start'; 
+      // display: 'inline-flex';
+      position: relative;
+      cursor: pointer;
+      height: 35px;
+      width: 100px;
+    }
+
+    &_span{
+      position: relative;
+    top: 1px;
+    left: -4px;
+    padding: 8px 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 999px;
+
+
+      &_1{
+        position: relative;
+        right: 0;
+      }
+    }
+  }

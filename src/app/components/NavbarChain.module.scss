@@ -1,0 +1,49 @@
+@import "../../../utils/Variables.scss";
+
+.navbar {
+  width: 95%;
+  max-width: 1800px;
+
+  // @include respond(tab-land) {
+    
+  // }
+
+  &_container{
+    background-color: #0f0f0f33;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone){
+      flex-direction: column;
+      background-color: #0E0E0E;
+    }
+  }
+
+  &_phone{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+#navbarBackdrop {
+  pointer-events: none; // Allow clicks to go through the blurred background
+  z-index: -1; // Place the backdrop behind the Navbar
+}
+
+/* Add styles to control the opacity transition */
+#navbar.backdrop-visible + #navbarBackdrop {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.blur_navbar {
+  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+}

@@ -1,9 +1,26 @@
+@import '../../../utils/Variables.scss';
+
 .efficency{
     // text-align: center;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    margin-top: 12rem;
+
+    @include respond(tab-port){
+        margin-top: 4rem;
+    }
 
     &_header{
-        font-size: 2vw;
+        font-size: 3vw;
+        text-align: center;
         font-weight: 600;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #ffffff, #a3a3a3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include respond(tab-port){}
     }
 
     &_container{
@@ -16,15 +33,47 @@
         width: 70%;
         border-radius: 10px;
 
+        @include respond(tab-port){
+            flex-direction: column-reverse;
+        }
+
         &_left{
             padding: 1rem;
+            flex: 30%;
 
             &_heading{
-                font-size: 2rem;
+                font-size: 2vw;
+                margin-bottom: 1.5rem;
+
+                @include respond(tab-port){
+                    font-size: 2.5vw;
+                }
+            }
+
+            &_content{
+                margin-bottom: 2rem;
+                font-size: 18px;
+                color: #ffffffaa;
+                line-height: 1.8;
+
+                @include respond(tab-port){
+                    font-size: 2.2vw;
+                }
+            }
+
+            &_btn{
+
+                @include respond(tab-port){
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 3rem;
+                }
+
             }
         }
 
         &_right{
+            flex: 70%;
             padding: 1rem;
         }
     }
