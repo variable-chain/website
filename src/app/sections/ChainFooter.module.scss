@@ -16,6 +16,11 @@
     &_list{
         color: #4F4F4F;
 
+        @include respond(phone){
+            margin-top: 2rem;
+            text-align: center;
+        }
+
         &_item{
             margin-bottom: 10px;
 
@@ -31,6 +36,23 @@
     &_copyright{
         color: #4F4F4F;
         margin-top: 2rem;
+
+        &_desktop{
+            @include respond(phone){
+                display: none;
+            }
+        }
+
+        &_phone{
+            display: none;
+
+            @include respond(phone){
+                color: #4F4F4F;
+                display: block;
+                text-align: center;
+            }
+
+        }
     }
 
     &_col{

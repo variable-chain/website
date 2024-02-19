@@ -1,4 +1,3 @@
-// Navbar.tsx
 import React, { useEffect, useState } from "react";
 import CustomButton from "./CustomButton";
 import styles from "./NavbarChain.module.scss";

@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const ChainFooter: React.FC = () => {
   return (
+    <>
     <div className={`${styles.footer} container`}>
       <div className={`${styles.footer_col} ${styles.footer_col1}`}>
         <svg
@@ -49,7 +50,7 @@ const ChainFooter: React.FC = () => {
             fill="#fff"
           />
         </svg>
-        <div className={styles.footer_copyright}>Copyright © Variable 2024</div>
+        <div className={`${styles.footer_copyright} ${styles.footer_copyright_desktop}`}>Copyright © Variable 2024</div>
       </div>
       <div className={`${styles.footer_col} ${styles.footer_col2}`}>
         <ul className={styles.footer_list}>
@@ -69,12 +70,14 @@ const ChainFooter: React.FC = () => {
       </div>
       <div className={`${styles.footer_col} ${styles.footer_col3}`}>
       <ul className={styles.footer_list}>
-            {/* <li className={styles.footer_list_item}>Explorer</li> */}
+            <li className={styles.footer_list_item}><Link href="/career">Career</Link></li>
             {/* <li className={styles.footer_list_item}><input className={styles.footer_list_item_input} placeholder="Your email" /></li> */}
             <li className={styles.footer_list_item}><Link target="_blank" href="https://medium.com/@variablechain">Blog</Link></li>
         </ul>
       </div>
     </div>
+    <div className={`${styles.footer_copyright_phone}`}>Copyright © Variable 2024</div>
+    </>
   );
 };
 
