@@ -35,6 +35,8 @@
 
         @include respond(tab-port){
             flex-direction: column-reverse;
+            width: 90%;
+            padding: 1rem;
         }
 
         &_left{

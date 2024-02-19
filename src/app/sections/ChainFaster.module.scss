@@ -29,6 +29,9 @@
 
         @include respond(tab-port){
             flex-direction: column;
+            max-width: -webkit-fill-available;
+            width: 90%;
+            padding: 1rem;
         }
 
         &_left{

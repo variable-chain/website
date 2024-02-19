@@ -1,0 +1,8 @@
+@import '../../../utils/Variables.scss';
+
+.button{
+
+    @include respond(phone){
+        font-size: 12px;
+    }
+}

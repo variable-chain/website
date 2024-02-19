@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ChainEfficiency.module.scss";
 import CustomButton from "../components/CustomButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const ChainEfficency: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const ChainEfficency: React.FC = () => {
             developers and traders.
           </div>
           <div className={styles.efficency_container_left_btn}>
+          <Link target="_blank" href="/developerdocs">
             <CustomButton
               text="Start Building"
               svg='<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +45,7 @@ const ChainEfficency: React.FC = () => {
 </svg>
 '
             />
+            </Link>
           </div>
         </div>
         <div className="efficency_container_right">

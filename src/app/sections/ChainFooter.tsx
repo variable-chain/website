@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./ChainFooter.module.scss";
+import Link from "next/link";
 
 const ChainFooter: React.FC = () => {
   return (
@@ -52,18 +53,25 @@ const ChainFooter: React.FC = () => {
       </div>
       <div className={`${styles.footer_col} ${styles.footer_col2}`}>
         <ul className={styles.footer_list}>
-            <li className={styles.footer_list_item}>Read our developer docs</li>
-            <li className={styles.footer_list_item}>Governance</li>
-            <li className={styles.footer_list_item}>Career</li>
-            {/* <li className={styles.footer_list_item}>Explorer</li>
-            <li className={styles.footer_list_item}>Blog</li> */}
+            <li className={styles.footer_list_item}>
+              <Link href="/developerdocs">
+              Read our developer docs
+              </Link>
+              </li>
+            <li className={styles.footer_list_item}><Link href="/governance">Governance</Link></li>
+            {/* <li className={styles.footer_list_item}>Career</li> */}
+            <Link
+              href="https://explorer.variable.foundation"
+              target="_blank"
+            ><li className={styles.footer_list_item}>Explorer</li></Link>
+            {/* <li className={styles.footer_list_item}>Blog</li> */}
         </ul>
       </div>
       <div className={`${styles.footer_col} ${styles.footer_col3}`}>
       <ul className={styles.footer_list}>
-            <li className={styles.footer_list_item}>Explorer</li>
+            {/* <li className={styles.footer_list_item}>Explorer</li> */}
             {/* <li className={styles.footer_list_item}><input className={styles.footer_list_item_input} placeholder="Your email" /></li> */}
-            <li className={styles.footer_list_item}>Blog</li>
+            <li className={styles.footer_list_item}><Link target="_blank" href="https://medium.com/@variablechain">Blog</Link></li>
         </ul>
       </div>
     </div>

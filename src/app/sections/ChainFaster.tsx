@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./ChainFaster.module.scss";
 import CustomButton from "../components/CustomButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const ChainFaster: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const ChainFaster: React.FC = () => {
             dynamic trading world.
           </div>
           <div className={styles.faster_container_right_btn}>
+          <Link target="_blank" href="/developerdocs">
             <CustomButton
               text="Trade on vairable DEX"
               svg='<svg width="17" height="17" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,6 +40,7 @@ const ChainFaster: React.FC = () => {
                 <path d="M45 2.54797H36.5999V16.8496H45V2.54797Z" fill="#3B62EC"/>
                 </svg>'
             />
+            </Link>
           </div>
         </div>
       </div>

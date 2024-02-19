@@ -1,6 +1,5 @@
-// components/CustomButton.tsx
-
 import React from "react";
+import styles from "./CustomButton.module.scss";
 
 interface CustomButtonProps {
   text?: string;
@@ -33,10 +32,11 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       style={buttonStyle}
       className={`flex items-center 
                 px-4 py-2 md:px-6 md:py-4 xl:px-6 xl:py-2 
-                sm:text-[14px] xl:text-[20px]
+                xl:text-[20px] md:text-[14px] sm:text-[12px]
                 rounded-full 
                 text-${textColor} shadow-${boxShadow} border-${borderColor} border-${borderWidth} hover:bg-${bgColor}-dark 
-                focus:outline-none focus:ring focus:border-blue-300`}
+                focus:outline-none focus:ring focus:border-blue-300
+                ${styles.button}`}
       onClick={onClick}
     >
       {text}
