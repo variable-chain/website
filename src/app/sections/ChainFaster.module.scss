@@ -29,14 +29,22 @@
 
         @include respond(tab-port){
             flex-direction: column;
-            max-width: -webkit-fill-available;
+            max-width: -webkit-fill-available !important;
             width: 90%;
             padding: 1rem;
+        }
+
+        @include respond(phone){
+            max-width: -webkit-fill-available;
         }
 
         &_left{
             padding: 1rem;
             flex: 30%;
+
+            & img{
+                border-radius: 15px;
+            }
         }
 
         &_right{

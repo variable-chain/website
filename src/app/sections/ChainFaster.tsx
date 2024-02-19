@@ -15,7 +15,6 @@ const ChainFaster: React.FC = () => {
             width={"428"}
             height={480}
             alt={"Gas station"}
-            style={{maxWidth: "max-content"}}
           />
         </div>
         <div className={styles.faster_container_right}>

@@ -9,7 +9,7 @@ interface CustomButtonProps {
   borderWidth?: string;
   onClick?: () => void;
   svg?: React.ReactNode;
-  boxShadow?: string;
+  boxShadow?: string | boolean;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
@@ -18,13 +18,14 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   bgColor = "white",
   borderColor = "gray-300",
   borderWidth = "1",
-  boxShadow = "none",
+  boxShadow = false,
   onClick = () => {},
   svg,
 }) => {
   const buttonStyle: React.CSSProperties = {
     backgroundColor: bgColor, // Set the background color explicitly
     color: textColor,
+    boxShadow: boxShadow ? "2px 2px 46px 30px rgb(50 106 215 / 27%)" : "none",
   };
 
   return (

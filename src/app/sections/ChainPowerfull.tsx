@@ -24,7 +24,7 @@ const ChainPowerful: React.FC = () => {
           </div>
         </div>
         <div className={`${styles.powerfull_card} ${styles.powerfull_card_4}`}>
-            <Image src={'/powerfull_41.png'} alt="Powerfull 3" width={'337'} height={480}/>
+            <Image src={'/powerfull_412.png'} alt="Powerfull 3" width={'337'} height={480}/>
             <p className={`${styles.powerfull_content} ${styles.powerfull_card_4_content}`}>Detailed Comprehensive Guide to get you started quickly</p>
         </div>
       </div>

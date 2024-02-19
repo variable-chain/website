@@ -77,6 +77,10 @@
         &_right{
             flex: 70%;
             padding: 1rem;
+
+            & img{
+                border-radius: 15px;
+            }
         }
     }
 }

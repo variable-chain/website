@@ -21,6 +21,7 @@ const Header_Chain: React.FC = () => {
           text="Bridge to Variable"
           textColor="white"
           bgColor="#3B62EC"
+          boxShadow={"[2px 2px 4px rgba(0, 0, 0, 0.1)]"}
         /></Link>
         <div style={{ width: "20px" }} />
         <Link target="_blank" href="/developerdocs">
