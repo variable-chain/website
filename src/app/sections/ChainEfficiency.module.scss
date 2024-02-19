@@ -20,7 +20,9 @@
         -webkit-background-clip: text;
         color: transparent;
 
-        @include respond(tab-port){}
+        @include respond(tab-port){
+            font-size: 4vw;
+        }
     }
 
     &_container{

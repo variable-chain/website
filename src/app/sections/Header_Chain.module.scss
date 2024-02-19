@@ -43,6 +43,7 @@
     }
 
     @include respond(sm-Phone) {
+      font-size: 3.9vw;
       margin-bottom: 1rem;
     }
   }

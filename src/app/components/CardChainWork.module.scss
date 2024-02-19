@@ -32,7 +32,6 @@
         margin-right: 10px;
       }
     }
-
   }
 
   .card-svg {
@@ -48,12 +47,20 @@
     .card-title {
       margin: 0 0 8px;
       font-size: 1.7rem;
+
+      @include respond(phone){
+        font-size: 4.2vw;
+      }
     }
 
     .card-text {
       margin: 0;
       font-size: 20px;
       color: #ffffff62;
+
+      @include respond(phone){
+        font-size: 4vw;
+      }
     }
   }
 }

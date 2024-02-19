@@ -11,6 +11,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(phone){
+      font-size: 5vw;
+    }
   }
 
   &_list {

@@ -19,9 +19,9 @@
     }
 
     @include respond(sm-Phone) {
-      width: 360px;
-      padding: 15px;
-      font-size: 14px;
+      width: 100%;
+      padding: 14px;
+      font-size: 12px;
     }
   }
 
@@ -35,6 +35,23 @@
     margin-top: 10px;
     margin-bottom: 10px;
 
+    &_desktop{
+
+      @include respond(tab-port){
+        display: none;
+      }
+    }
+
+    &_mobile{
+      display: none;
+      
+      @include respond(tab-port){
+        display:block;
+        margin-left: -80px !important;
+        font-size: 12px !important;
+      }
+    }
+
     @include respond(phone) {
       margin-left: -13.5rem;
       padding: 0.25rem 1rem;
@@ -43,7 +60,7 @@
     @include respond(sm-Phone) {
       padding: 0.1rem .25rem;
       font-size: 14px;
-      margin-left: -11rem;
+      margin-left: -8rem;
     }
   }
 }

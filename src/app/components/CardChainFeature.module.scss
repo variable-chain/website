@@ -26,10 +26,18 @@
     line-height: 24px;
     letter-spacing: 0.02em;
     text-align: left;
+
+    @include respond(phone){
+      font-size: 3.2vw;
+    }
   }
 
   &-text {
     font-size: 15px;
     color: #4f4f4f;
+
+    @include respond(phone){
+      font-size: 3vw;
+    }
   }
 }

@@ -66,7 +66,8 @@ const ZohoForm = () => {
 						</div>
                         <div className={styles.form_container}>
 						<input type="email" className={styles.form_container_input} required  placeholder="john.doe@email.com" data-changeitem="SIGNUP_FORM_FIELD" name="CONTACT_EMAIL" id="EMBED_FORM_EMAIL_LABEL"/>
-						<input type="submit" className={styles.form_container_btn}  name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Subscribe for updates"/>
+						<input type="submit" className={`${styles.form_container_btn} ${styles.form_container_btn_desktop}`}  name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Subscribe for updates"/>
+						<input type="submit" className={`${styles.form_container_btn} ${styles.form_container_btn_mobile}`}  name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" value="Subscribe"/>
 
                         </div>
 					</div>

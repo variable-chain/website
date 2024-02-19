@@ -163,27 +163,29 @@ const NavbarChain: React.FC<NavbarChainProps> = ({ onToggle }) => {
         {/* Mobile Menu - Hidden on Desktop */}
         {menuOpen && (
           <div className={`md:hidden mt-4 ${styles.navbar_phone}`}>
-            <a href="#" className="block text-white py-2">
+            <Link href="/developerdocs" className="block text-white py-2">
               Developer Docs
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://bridge.variable.foundation"
               className="block text-white py-2"
+              target="_blank"
             >
-              Explorer
-            </a>
-            <a
+              Bridge
+            </Link>
+            <Link
               href="https://explorer.variable.foundation"
               className="block text-white py-2"
+              target="_blank"
             >
               Explorer
-            </a>
-            <a href="#" className="block text-white py-2">
+            </Link>
+            <Link href="/governance" className="block text-white py-2">
               Governance
-            </a>
-            <a href="#" className="block text-white py-2">
+            </Link>
+            <Link href="/learn" className="block text-white py-2">
               Learn
-            </a>
+            </Link>
             <SocailIcons />
           </div>
         )}

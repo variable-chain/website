@@ -35,7 +35,7 @@ const CardChainWork: React.FC<CardProps> = ({ svg, title, content }) => {
                   />
                 </svg>
               </div>
-              <span>{item}</span>
+              <span className={styles["card-text"]}>{item}</span>
             </li>
           ))}
         </ul>
