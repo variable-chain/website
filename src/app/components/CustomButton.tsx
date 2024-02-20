@@ -33,7 +33,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
       style={buttonStyle}
       className={`flex items-center 
                 px-4 py-2 md:px-6 md:py-4 xl:px-6 xl:py-2 
-                xl:text-[18px] md:text-[14px] sm:text-[12px]
+                xl:text-[16px] md:text-[14px] sm:text-[12px]
                 rounded-full 
                 text-${textColor} shadow-${boxShadow} border-${borderColor} border-${borderWidth} hover:bg-${bgColor}-dark 
                 focus:outline-none focus:ring focus:border-blue-300

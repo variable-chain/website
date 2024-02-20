@@ -25,7 +25,7 @@ const Header_Chain: React.FC = () => {
         /></Link>
         <div style={{ width: "20px" }} />
         <Link target="_blank" href="/developerdocs">
-        <CustomButton text="Build Now" textColor="black" bgColor="white" />
+        <CustomButton text="Start Building" textColor="black" bgColor="white" />
         </Link>
       </div>
       <div className={styles.header_form}>
