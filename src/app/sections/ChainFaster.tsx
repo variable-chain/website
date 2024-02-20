@@ -11,7 +11,7 @@ const ChainFaster: React.FC = () => {
       <div className={styles.faster_container}>
         <div className={styles.faster_container_left}>
           <Image
-            src={"/Trade_faster_than_ever.svg"}
+            src={"/trade_faster.png"}
             width={"428"}
             height={480}
             alt={"Gas station"}

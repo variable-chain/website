@@ -19,13 +19,13 @@ const ChainFeature: React.FC = () => {
         className={styles.feature_card}
           title={"Custom Data Availability"}
           content="Variable leverages Eigen Layer to exponentially increase data availability for ZK rollups, enabling massive transaction throughput at minimum cost."
-          svgURL={"/feature_2.svg"}
+          svgURL={"/custom_data.png"}
         />
         <CardChainFeature
         className={styles.feature_card}
           title={"Decentralized Sequencers"}
           content="Variable shatters centralized chokepoints with decentralized sequencers, enabling lightning-fast transactions, and secure inter-blockchain communications."
-          svgURL={"/feature_3.svg"}
+          svgURL={"/Decentralized_Sequencers.png"}
         />
         <CardChainFeature
         className={styles.feature_card}
@@ -37,7 +37,7 @@ const ChainFeature: React.FC = () => {
         className={styles.feature_card}
           title={"Shared Revenue"}
           content="Variable incentivizes collaboration to foster ecosystem growth, bringing value to both platforms."
-          svgURL={"/feature_5.svg"}
+          svgURL={"/shared_revenue.png"}
         />
         <CardChainFeature
         className={styles.feature_card}

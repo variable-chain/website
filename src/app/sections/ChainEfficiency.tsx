@@ -50,7 +50,7 @@ const ChainEfficency: React.FC = () => {
         </div>
         <div className="efficency_container_right">
           <Image
-            src={"/Gas_pump.svg"}
+            src={"/no_gas.png"}
             width={"428"}
             height={480}
             alt={"Gas station"}

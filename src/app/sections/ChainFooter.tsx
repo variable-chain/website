@@ -7,6 +7,7 @@ const ChainFooter: React.FC = () => {
     <>
     <div className={`${styles.footer} container`}>
       <div className={`${styles.footer_col} ${styles.footer_col1}`}>
+        <Link href="/">
         <svg
           width={"150px"}
           viewBox="0 0 152 32"
@@ -50,6 +51,7 @@ const ChainFooter: React.FC = () => {
             fill="#fff"
           />
         </svg>
+        </Link>
         <div className={`${styles.footer_copyright} ${styles.footer_copyright_desktop}`}>Copyright © Variable 2024</div>
       </div>
       <div className={`${styles.footer_col} ${styles.footer_col2}`}>

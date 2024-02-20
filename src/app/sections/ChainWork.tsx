@@ -6,7 +6,7 @@ const ChainWork: React.FC = () => {
   return (
     <div className="container mx-auto">
       {/* <div className={styles.work_heading_tag}></div> */}
-      <div className={styles.work_heading}>Get your customized ZK-powered trading app up and running in just 3 simple steps</div>
+      <div className={styles.work_heading}>Unfold Endless Trading Possibilities with Variable</div>
       <div className={styles.workContainer}>
         <CardChainWork
           svg='<svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">

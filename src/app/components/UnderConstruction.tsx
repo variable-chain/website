@@ -19,7 +19,7 @@ const UnderConstruction: React.FC = () => {
           src="/under_construction.svg"
           width={800}
           height={700}
-          style={{ maxWidth: "80%", minWidth: "30%", marginTop:"5rem" }}
+          style={{ maxWidth: "70%", minWidth: "30%", marginTop:"8rem" }}
           alt="Under construction"
         />
         <h1 style={{fontSize: "2vw", fontWeight: 600, color: "#3B62EC", marginTop: "15px"}}>Page Under Construction</h1>

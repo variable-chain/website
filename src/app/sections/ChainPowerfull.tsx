@@ -15,7 +15,7 @@ const ChainPowerful: React.FC = () => {
         </div>
         <div className={styles.powerfull_container_section}>
           <div className={styles.powerfull_card}>
-            <Image className={styles.powerfull_3_image} src={'/powerfull_21.png'} alt="Powerfull 3" width={'357'} height={164}/>
+            <Image className={styles.powerfull_3_image} src={'/open_source.png'} alt="Powerfull 3" width={'357'} height={164}/>
             <p className={styles.powerfull_content}>Open-source code for transparency and customization</p>
           </div>
           <div className={styles.powerfull_card}>

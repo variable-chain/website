@@ -24,6 +24,8 @@
     &_item {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      // justify-content: center;
       padding: 16px;
       border-radius: 14px;
       border: 1px solid rgb(37, 37, 37);
@@ -50,7 +52,7 @@
 
     .card-title {
       margin: 0 0 8px;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
 
       @include respond(phone){
         font-size: 4.2vw;
@@ -59,7 +61,7 @@
 
     .card-text {
       margin: 0;
-      font-size: 20px;
+      font-size: 18px;
       color: #ffffff62;
 
       @include respond(phone){
