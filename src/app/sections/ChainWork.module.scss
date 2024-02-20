@@ -3,7 +3,7 @@
 .workContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   @include respond(tab-port) {
     flex-direction: column;

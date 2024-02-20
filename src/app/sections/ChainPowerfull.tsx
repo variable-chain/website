@@ -8,7 +8,7 @@ const ChainPowerful: React.FC = () => {
       <h2 className={styles.powerfull_heading}>
         Build powerful trading machines with Variable
       </h2>
-      <div className={styles.powerfull_container}>
+      <div className={`${styles.powerfull_container} container mx-auto`}>
         <div className={`${styles.powerfull_card} ${styles.powerfull_card_1}`}>
             <Image src={'/powerfull_111.svg'} alt="Powerfull 1" width={'428'} height={480}/>
             <p className={`${styles.powerfull_content} ${styles.powerfull_card_1_content}`}>Active Developer Community for endless support</p>

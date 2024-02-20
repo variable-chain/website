@@ -1,9 +1,11 @@
 @import "../../../utils/Variables.scss";
 
 .card {
-  width: 350px;
-  background-color: #252525;
-  border: 1px solid rgba(37, 37, 37, 1);
+  width: 100%;
+  max-width: 350px;
+  max-height: 380px;
+  background-color: #161616;
+  border: 1px solid #232323;
   padding: 16px;
   border-radius: 24px;
   
@@ -33,7 +35,7 @@
   }
 
   &-text {
-    font-size: 15px;
+    font-size: 12px;
     color: #4f4f4f;
 
     @include respond(phone){
