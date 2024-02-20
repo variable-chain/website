@@ -28,16 +28,9 @@ const ChainFaster: React.FC = () => {
             dynamic trading world.
           </div>
           <div className={styles.faster_container_right_btn}>
-          <Link target="_blank" href="/developerdocs">
+          <Link href="/developerdocs">
             <CustomButton
-              text="Trade on vairable DEX"
-              svg='<svg width="17" height="17" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.4001 2.54797H3V16.8496H11.4001V2.54797Z" fill="#3B62EC"/>
-                <path d="M19.8036 16.8491H11.4034V31.1506H19.8036V16.8491Z" fill="#3B62EC"/>
-                <path d="M28.1969 31.1504H19.7968V45.452H28.1969V31.1504Z" fill="#3B62EC"/>
-                <path d="M36.5965 16.8491H28.1964V31.1506H36.5965V16.8491Z" fill="#3B62EC"/>
-                <path d="M45 2.54797H36.5999V16.8496H45V2.54797Z" fill="#3B62EC"/>
-                </svg>'
+              text="Read our developer docs"
             />
             </Link>
           </div>

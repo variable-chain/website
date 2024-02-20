@@ -23,7 +23,7 @@ const ChainEfficency: React.FC = () => {
             developers and traders.
           </div>
           <div className={styles.efficency_container_left_btn}>
-          <Link target="_blank" href="/developerdocs">
+          <Link href="/developerdocs">
             <CustomButton
               text="Start Building"
               svg='<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
