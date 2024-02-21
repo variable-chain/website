@@ -4,7 +4,7 @@ import styles from "./ChainPartners.module.scss";
 const ChainPartners: React.FC = () => {
   return (
     <>
-      <div className={styles.partners_header}>Trusted by our partners</div>
+      <div className={styles.partners_header}>Trusted partners</div>
       <ul className={styles.partners_list}>
         <li className={styles.partners_list_item}>
           <svg
