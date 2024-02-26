@@ -75,7 +75,7 @@ const SocialIcons: React.FC = () => {
               </a>
             </li>
             <li className={styles.social_list_item}>
-            <a href="https://github.com/variable-exchange/" className={styles.social_list_item_link} target="_blank">
+            <a href="https://github.com/variable-chain/" className={styles.social_list_item_link} target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 50 50"

@@ -56,12 +56,13 @@
             flex: 50%;
             
             &_heading{
-                font-size: 1.8vw;
+                // font-size: 1.8vw;
+                font-size: clamp(12px, 4vw, 22px);
                 margin-bottom: 1.5rem;
                 line-height: 1.8;
 
                 @include respond(tab-port){
-                    font-size: 3vw;
+                    // font-size: 3vw;
                 }
             }
 
