@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./CardChainWork.module.scss"; // Import the SCSS module
+import { motion, useAnimation } from "framer-motion";
 
 interface CardProps {
   svg: React.ReactElement;
@@ -8,10 +9,44 @@ interface CardProps {
 }
 
 const CardChainWork: React.FC<CardProps> = ({ svg, title, content }) => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const animationSequence = async () => {
+      // Wait for 3 seconds before starting the first animation
+      await controls.start({
+        scale: [1, 1.3, 1.3, 1, 1],
+        rotate: [0, 0, 360, 360, 0],
+        borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+        transition: {
+          duration: 1,
+          ease: 'linear',
+        },
+      });
+
+      // Wait for 3 seconds before starting the next animation iteration
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      controls.start({
+        scale: [1, 1.3, 1.3, 1, 1],
+        rotate: [0, 0, 360, 360, 0],
+        borderRadius: ['20%', '20%', '50%', '50%', '20%'],
+        transition: {
+          duration: 1,
+          ease: 'linear',
+        },
+      });
+
+      // Repeat the animation sequence indefinitely
+      animationSequence();
+    };
+
+    animationSequence();
+  }, [controls]);
+
   const contentArray: string[] = JSON.parse(content);
   return (
     <div className={styles.card}>
-      <div
+      <motion.div animate={controls}
         className={styles["card-svg"]}
         dangerouslySetInnerHTML={{ __html: svg }}
       />
