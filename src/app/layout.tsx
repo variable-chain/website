@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Variable",
-  description: "Variable blockchain solutions",
+  description: "Variable Blockchain Solutions",
 };
 
 export default function RootLayout({
