@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./CardChainWork.module.scss"; // Import the SCSS module
 import { motion, useAnimation } from "framer-motion";
 
@@ -9,11 +9,39 @@ interface CardProps {
 }
 
 const CardChainWork: React.FC<CardProps> = ({ svg, title, content }) => {
-
   const contentArray: string[] = JSON.parse(content);
+  const [animationVariant, setAnimationVariant] = useState<"initial" | "zoomed">("initial");
+
+  useEffect(() => {
+    const animate = () => {
+      setAnimationVariant((prevVariant) => (prevVariant === 'initial' ? 'zoomed' : 'initial'));
+    };
+
+    // Start the animation immediately
+    const intervalId = setInterval(animate, 5000); // 5000 milliseconds (5 seconds)
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const variants = {
+    initial: {
+      scale: 1,
+      rotate: 0,
+    },
+    zoomed: {
+      scale: 1.2,
+      rotate: 360,
+    },
+  };
+
+
   return (
     <div className={styles.card}>
-      <div
+      <motion.div
+        variants={variants}
+        animate={animationVariant}
+        transition={{ duration: .5 }}
         className={styles["card-svg"]}
         dangerouslySetInnerHTML={{ __html: svg }}
       />

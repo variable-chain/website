@@ -52,7 +52,7 @@
 
     .card-title {
       margin: 0 0 8px;
-      font-size: 1.4vw;
+      font-size: clamp(10px, 1.4vw, 25px);
 
       @include respond(phone){
         font-size: 4.2vw;

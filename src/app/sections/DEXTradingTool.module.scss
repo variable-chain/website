@@ -1,0 +1,66 @@
+.DEXTradingTool {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #151920;
+
+  &_heading {
+    margin-top: 8rem;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #727267, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    // @include respond(tab-port){
+    //     font-size: 4vw;
+    // }
+  }
+
+  &_subHeading {
+    color: #656565;
+    margin-bottom: 2.5rem;
+    font-size: 1.1vw;
+
+    // @include respond(tab-port) {
+    //   font-size: 2vw;
+    // }
+
+    // @include respond(sm-Phone) {
+    //     font-size: 2vw;
+    // }
+  }
+
+  &_card {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    // border: ;
+
+    &_left{
+        flex: 60%;
+
+    }
+
+    &_right{
+        flex: 40%;
+    }
+
+    &_heading {
+      background: linear-gradient(45deg, #727267, #fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 24px;
+    }
+    &_content{
+        color: #98A2B3;
+    }
+  }
+}
