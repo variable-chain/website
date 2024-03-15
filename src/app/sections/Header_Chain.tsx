@@ -5,10 +5,15 @@ import ChainPartners from "./ChainPartners";
 import ZohoForm from "../components/ZohoForm";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Spotlight } from "../components/ui/Spotlight";
 
 const Header_Chain: React.FC = () => {
   return (
     <header className={styles.header_container}>
+      <Spotlight
+        className="-top-40 left-0 md:left-[35rem] md:-top-20"
+        fill="white"
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
