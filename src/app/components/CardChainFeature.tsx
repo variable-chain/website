@@ -20,7 +20,7 @@ const CardChainFeature: React.FC<CardProps> = ({
 }) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-[#161616] dark:border-white/[0.2] border-black/[0.1] max-w-sm max-h-sm rounded-3xl  ">
+      <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-[#161616] border-white/[0.2] max-w-sm max-h-sm rounded-3xl  ">
         <CardItem translateZ="100" className="w-full p-4">
           <Image
             src={svgURL}
