@@ -11,7 +11,7 @@ const Header_Chain: React.FC = () => {
   return (
     <header className={styles.header_container}>
       <Spotlight
-        className="-top-40 left-0 md:left-[35rem] md:-top-20"
+        className="-top-40 left-0 md:left-[30rem] md:-top-20 hidden md:inline-block"
         fill="white"
       />
       <motion.div
