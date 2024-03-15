@@ -11,7 +11,7 @@ export default function DeveloperDocs() {
       };
       return (
         <>
-          <NavbarChain onToggle={handleToggle} />
+          {/* <NavbarChain onToggle={handleToggle} /> */}
           <UnderConstruction />
         </>
     )

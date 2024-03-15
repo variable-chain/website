@@ -3,6 +3,7 @@ import styles from "./ChainEfficiency.module.scss";
 import CustomButton from "../components/CustomButton";
 import Image from "next/image";
 import Link from "next/link";
+import { BackgroundBeams } from "../components/ui/background-beams";
 
 const ChainEfficency: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const ChainEfficency: React.FC = () => {
         Near-to Zero Costs with Maximum efficiency
       </h2>
       <div className={styles.efficency_container}>
+        <BackgroundBeams className={styles.efficency_container_beam} />
         <div className={styles.efficency_container_left}>
           <div className={styles.efficency_container_left_heading}>
             Thanks to our modular architecture, Variable offers a near-to-zero

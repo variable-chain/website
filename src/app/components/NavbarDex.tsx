@@ -111,7 +111,7 @@ const NavbarDex: React.FC<NavbarChainProps> = ({ onToggle }) => {
           {/* Navigation links section for desktop */}
           <div className="hidden md:flex space-x-10 border border-solid bg-[#131313] border-gray-600 border-light rounded-full xl:p-4 xl:px-10 lg:p-3 lg:px-2 md:p-2 md:px-2">
             <Link href="/developerdocs" className="text-[#666666] hover:none">
-              Developer Docs
+              Deve
             </Link>
             <Link
               href="https://explorer.variable.foundation"

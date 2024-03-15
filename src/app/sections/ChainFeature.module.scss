@@ -19,12 +19,14 @@
     }
 
   &_container {
+    max-width: 1500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    // width: 80%;
     margin: 0 auto;
+    gap: 5rem;
 
     @include respond(big-desktop){
       width: 70%;

@@ -3,12 +3,14 @@ import styles from "./ChainFaster.module.scss";
 import CustomButton from "../components/CustomButton";
 import Image from "next/image";
 import Link from "next/link";
+import { BackgroundBeams } from "../components/ui/background-beams";
 
 const ChainFaster: React.FC = () => {
   return (
     <div className="`${styles.faster} container`">
       <h2 className={styles.faster_header}>Trade Faster than ever</h2>
       <div className={styles.faster_container}>
+      <BackgroundBeams className={styles.efficency_container_beam} />
         <div className={styles.faster_container_left}>
           <Image
             src={"/trade_faster.png"}
