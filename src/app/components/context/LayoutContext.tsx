@@ -24,8 +24,6 @@ export const LayoutProvider: React.FC<LayoutProviderProps> = ({ children }) => {
   const [layout, setLayout] = useState(false);
 
   const changeLayout = (newLayout: boolean) => {
-    console.log(newLayout);
-    
     setLayout(newLayout);
   };
 

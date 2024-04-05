@@ -1,0 +1,54 @@
+@import "../../../../utils/Variables.scss";
+
+.partners {
+  &_header {
+    margin-top: 8rem;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #ffffff, #a3a3a3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @include respond(phone){
+      font-size: 5vw;
+    }
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -8rem;
+    flex-wrap: wrap;
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+      margin-bottom: -4rem;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+    &_item {
+      flex: 1;
+      box-sizing: border-box;
+      margin: 5px;
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+      }
+
+    }
+
+    & svg {
+      width: 100%;
+    }
+  }
+}

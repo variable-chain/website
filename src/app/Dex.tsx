@@ -1,10 +1,15 @@
 import React from "react";
 import NavbarDex from "./components/NavbarDex";
 import UnderConstruction from "./components/UnderConstruction";
-import Header_DEX from "./sections/Header_DEX";
-import DEXEcosystem from "./sections/DEXEcosystem";
-import DEXTradingTool from "./sections/DEXTradingTool";
-import { BackgroundBeams } from "./components/ui/background-beams";
+import Header_DEX from "./sections/DEX/Header_DEX";
+import DEXEcosystem from "./sections/DEX/DEXEcosystem";
+import DEXTradingTool from "./sections/DEX/DEXTradingTool";
+import DEXTradingHorizons from "./sections/DEX/DEXTradingHorizons";
+import DEXTradingExperience from "./sections/DEX/DEXTradingExperience";
+import DEXMultiChainDeposits from "./sections/DEX/DEXMultiChainDeposits";
+import DEXHedgeMode from "./sections/DEX/DEXHedgeMode";
+import DEXFooter from "./sections/DEX/DEXFooter";
+import DEXRevenueSharing from "./sections/DEX/DEXRevenueSharing";
 
 const Dex: React.FC = () => {
   const handleToggle = () => {
@@ -13,10 +18,16 @@ const Dex: React.FC = () => {
   return (
     <>
       <NavbarDex onToggle={handleToggle} />
-      {/* <Header_DEX />
+      <Header_DEX />
       <DEXEcosystem />
-      <DEXTradingTool /> */}
-      <UnderConstruction />
+      <DEXTradingExperience />
+      <DEXMultiChainDeposits />
+      <DEXHedgeMode />
+      <DEXRevenueSharing />
+      {/* <DEXTradingTool /> */}
+      <DEXTradingHorizons />
+      <DEXFooter />
+      {/* <UnderConstruction /> */}
     </>
   );
 };

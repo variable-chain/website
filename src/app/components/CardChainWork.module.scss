@@ -3,7 +3,6 @@
 .card {
   border-radius: 20px;
   overflow: hidden;
-  // margin: 16px;
   width: 350px;
   height: 530px;
   padding: 2rem;
@@ -16,7 +15,7 @@
   }
 
   @include respond(tab-port) {
-    height: 520px;
+    height: 480px;
   }
 
   &_list {
@@ -52,7 +51,7 @@
 
     .card-title {
       margin: 0 0 8px;
-      font-size: clamp(10px, 1.4vw, 25px);
+      font-size: clamp(10px, 1.3vw, 24px);
 
       @include respond(phone){
         font-size: 4.2vw;
@@ -61,7 +60,7 @@
 
     .card-text {
       margin: 0;
-      font-size: 14px;
+      font-size: 13px;
       color: #ffffff62;
 
       @include respond(phone){

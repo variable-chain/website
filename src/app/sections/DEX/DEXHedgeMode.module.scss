@@ -1,0 +1,18 @@
+@import "../../../../utils/Variables.scss";
+
+.hedgeMode{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(var(--background-color-dex));
+
+    @include respond(tab-port){
+        padding: 0 3rem;
+        &_image{
+            // width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

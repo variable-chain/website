@@ -1,0 +1,80 @@
+@import "../../../../utils/Variables.scss";
+
+.footer {
+  background-color: rgb(var(--background-color-dex));
+  margin: 0 auto;
+  &_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+
+  &_list {
+    color: #4f4f4f;
+
+    @include respond(phone) {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    &_item {
+      margin-bottom: 10px;
+
+      &_input {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #1a1a1a;
+        color: #4f4f4f;
+      }
+    }
+  }
+
+  &_copyright {
+    color: #4f4f4f;
+    margin-top: 2rem;
+
+    &_desktop {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &_phone {
+      display: none;
+
+      @include respond(phone) {
+        color: #4f4f4f;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  &_col {
+    color: #1a1a1a;
+  }
+
+  &_col1 {
+    flex: 60%;
+  }
+
+  &_col2 {
+    flex: 20%;
+  }
+
+  &_col3 {
+    flex: 20%;
+  }
+}

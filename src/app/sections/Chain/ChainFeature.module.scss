@@ -1,0 +1,50 @@
+@import "../../../../utils/Variables.scss";
+
+.feature {
+
+    &_heading{
+        margin-top: 8rem;
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, #ffffff, #a3a3a3);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+        @include respond(tab-port){
+          font-size: 4vw;
+      }
+    }
+
+  &_container {
+    max-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // width: 80%;
+    margin: 0 auto;
+    gap: 5rem;
+
+    @include respond(big-desktop){
+      width: 70%;
+    }
+
+    @include respond(tab-port){}
+  }
+  &_card {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    
+    @include respond(tab-port){
+      width: 50%;
+    }
+
+    @include respond(phone){
+      width: 100%;
+    }
+  }
+}

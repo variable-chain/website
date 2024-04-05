@@ -23,6 +23,18 @@ const config: Config = {
         "meteor-effect": "meteor 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
+      typography: {
+        "heading_primary": {
+          marginTop: "8rem",
+          fontSize: "3vw",
+          textAlign: "center",
+          fontWeight: 600,
+          marginBottom: "2rem",
+          background: "linear-gradient(45deg, #727267, #fff)",
+          backgroundClip: "text",
+          color: "transparent",
+        },
+      },
       keyframes: {
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },

@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import CustomButton from "./CustomButton";
 import styles from "./NavbarChain.module.scss";
 import ToggleSwitch from "./ToggleSwitch";
-import { useLayout } from "./context/LayoutContext";
-import SocailIcons from "./SocialIcons";
-import SocialIcons from "./SocialIcons";
 import Link from "next/link";
 
 interface NavbarChainProps {
@@ -31,7 +28,6 @@ const NavbarDex: React.FC<NavbarChainProps> = ({ onToggle }) => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 0);
       setBlurNavbar(scrollTop > 0);
-      console.log("scrollTop =", scrollTop);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -109,30 +105,25 @@ const NavbarDex: React.FC<NavbarChainProps> = ({ onToggle }) => {
           </div>
 
           {/* Navigation links section for desktop */}
-          <div className="hidden md:flex space-x-10 border border-solid bg-[#131313] border-gray-600 border-light rounded-full xl:p-4 xl:px-10 lg:p-3 lg:px-2 md:p-2 md:px-2">
-            <Link href="/developerdocs" className="text-[#666666] hover:none">
-              Deve
+          <div className="hidden md:flex space-x-10 border border-solid bg-[#0000000f] border-gray-600 border-light rounded-full xl:p-4 xl:px-10 lg:p-3 lg:px-2 md:p-2 md:px-2">
+            <Link href="/features" className="text-[#666666] hover:none">
+              Features
             </Link>
             <Link
-              href="https://explorer.variable.foundation"
+              href="/community"
               className="text-[#666666] hover:none"
-              target="_blank"
             >
-              Explorer
+              Community
             </Link>
-            <Link href="/governance" className="text-[#666666] hover:none">
-              Governance
+            <Link href="/developerdocs" className="text-[#666666] hover:none">
+              Docs
             </Link>
             <a
-              href="https://bridge.variable.foundation"
+              href="/faqs"
               className="text-[#666666] hover:none"
-              target="_blank"
             >
-              Bridge
+              FAQs
             </a>
-            <Link href="/learn" className="text-[#666666] hover:none">
-              Learn
-            </Link>
           </div>
 
           {/* Mobile Menu Button - Hidden on Desktop */}
@@ -155,7 +146,9 @@ const NavbarDex: React.FC<NavbarChainProps> = ({ onToggle }) => {
               </button>
             </div>
           <div className={styles.hide}>
-            <SocialIcons />
+          <Link href="/trade" className="block text-white py-2">
+          <CustomButton text="Trade"  bgColor="#0000000f" textColor="#666666" borderColor="gray-600" borderWidth=""/>
+          </Link>
           </div>
         </div>
 
@@ -163,29 +156,29 @@ const NavbarDex: React.FC<NavbarChainProps> = ({ onToggle }) => {
         {menuOpen && (
           <div className={`md:hidden mt-4 ${styles.navbar_phone}`}>
             <Link href="/developerdocs" target="_blank" className="block text-white py-2">
-              Developer Docs
+            Features
             </Link>
             <Link
-              href="https://bridge.variable.foundation"
+              href="/community"
               className="block text-white py-2"
               target="_blank"
             >
-              Bridge
+              Community
             </Link>
             <Link
-              href="https://explorer.variable.foundation"
+              href="/developerdocsn"
               className="block text-white py-2"
               target="_blank"
             >
-              Explorer
+              Docs
             </Link>
-            <Link href="/governance" target="_blank" className="block text-white py-2">
-              Governance
+            <Link href="/governance" className="block text-white py-2">
+              FAQs
             </Link>
-            <Link href="/learn"  target="_blank" className="block text-white py-2">
-              Learn
+            <Link href="/trade" className="block text-white py-2">
+            <CustomButton text="Trade"  bgColor="#0000000f" textColor="#666666" borderColor="gray-600" borderWidth=""/>
             </Link>
-            <SocailIcons />
+            {/* <SocailIcons bgColor="#0000000f"/> */}
           </div>
         )}
       </nav>

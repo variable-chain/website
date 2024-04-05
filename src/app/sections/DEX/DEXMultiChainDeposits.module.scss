@@ -1,0 +1,48 @@
+@import "../../../../utils/Variables.scss";
+
+.DEXMultiChainDeposits {
+  background-color: rgb(var(--background-color-dex));
+
+  &_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 3rem;
+      padding-top: 5rem;
+    }
+  }
+
+  @include respond(tab-port){
+    &_image{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+&_left{
+
+  @include respond(tab-port){
+    text-align: center;
+  }
+}
+
+  &_heading {
+    @include respond(tab-port){
+      text-align: center;
+    }
+  }
+
+  &_subHeading {
+    color: #656565;
+    margin-bottom: 2.5rem;
+    font-size: 1.1vw;
+  }
+}

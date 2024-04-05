@@ -18,7 +18,7 @@
 <rect x="347.812" y="9.55469" width="239" height="531.113" fill="url(#pattern0)"/>
 <rect x="348.312" y="6.5" width="236" height="526" rx="18.5" stroke="#242424"/>
 </g>
-<rect x="345.047" y="3.26953" width="243.073" height="532.829" rx="21.439" stroke="#DFE2E6" stroke-width="6"/>
+<rect x="345.047" y="3.26953" width="243.073" height="532.829" rx="21.439" stroke="#DFE2E6" strokeWidth="6"/>
 </g>
 <g filter="url(#filter2_d_75_886)">
 <rect x="192.633" y="58.0742" width="210.39" height="125.38" rx="14.0488" fill="white"/>

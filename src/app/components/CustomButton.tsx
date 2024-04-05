@@ -22,6 +22,8 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   onClick = () => {},
   svg,
 }) => {
+  console.log("border width", borderWidth);
+  
   const buttonStyle: React.CSSProperties = {
     backgroundColor: bgColor, // Set the background color explicitly
     color: textColor,
@@ -35,7 +37,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
                 px-4 py-2 md:px-6 md:py-4 xl:px-6 xl:py-2 
                 xl:text-[16px] md:text-[14px] sm:text-[12px]
                 rounded-full 
-                text-${textColor} shadow-${boxShadow} border-${borderColor} border-${borderWidth} hover:bg-${bgColor}-dark 
+                text-${textColor} shadow-${boxShadow} border-${borderColor} border${borderWidth} hover:bg-${bgColor}-dark 
                 focus:outline-none focus:ring focus:border-blue-300
                 ${styles.button}`}
       onClick={onClick}
