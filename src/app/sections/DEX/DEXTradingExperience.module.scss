@@ -1,3 +1,5 @@
+@import "../../../../utils/Variables.scss";
+
 .tradingExperience{
     text-align: center;
     display: flex;
@@ -5,6 +7,13 @@
     align-items: center;
     flex-direction: column;
     background-color:rgb(var(--background-color-dex));
+
+    &_image1{
+        @include respond(phone){
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
 
     &_heading{
         margin-top: 8rem;
