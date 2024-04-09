@@ -5,5 +5,5 @@ import { useLayout } from "./components/context/LayoutContext";
 export default function Home() {
   const { layout } = useLayout();
 
-  return <>{!layout ? <Dex /> : <Chain />}</>;
+  return <>{layout ? <Dex /> : <Chain />}</>;
 }
