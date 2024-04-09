@@ -46,6 +46,7 @@
 
 .blur_navbar {
   backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  z-index: 1;
 }
 
 .hide{

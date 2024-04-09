@@ -15,6 +15,20 @@
         }
     }
 
+    &_desktop{
+        @include respond(phone){
+            display: none;
+        }
+    }
+
+    &_mobile{
+        display: none;
+        @include respond(phone){
+            display: block;
+            width: 90%;
+        }
+    }
+
     &_heading{
         margin-top: 8rem;
         font-size: 3vw;
